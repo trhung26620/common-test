@@ -1,0 +1,67 @@
+{
+  "name": "nami-exchange-common",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=14.x"
+  },
+  "description": "Common module for Nami Exchange",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "yarn build",
+    "prebuild": "rimraf dist",
+    "build": "tsc -p tsconfig.build.json",
+    "test": "jest --runInBand"
+  },
+  "keywords": [
+    "neo4j",
+    "nest",
+    "nestjs",
+    "module"
+  ],
+  "dependencies": {
+    "bodybuilder": "^2.5.0",
+    "lodash": "^4.17.21",
+    "@elastic/elasticsearch": "^8.5.0",
+    "mongoose": "^6.7.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.1.1",
+    "@types/node": "^18.8.2",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^29.1.2",
+    "prettier": "^2.7.1",
+    "supertest": "^6.3.0",
+    "ts-jest": "^29.0.3",
+    "ts-loader": "^9.4.1",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.0",
+    "typescript": "^4.8.4",
+    "reflect-metadata": "^0.1.13"
+  },
+  "peerDependencies": {},
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": ".",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "lib/**/*.(t|j)s",
+      "!**/index.ts"
+    ],
+    "coverageDirectory": "./coverage",
+    "collectCoverage": true,
+    "testEnvironment": "node"
+  }
+}

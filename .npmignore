@@ -1,0 +1,16 @@
+.github
+.neo4j
+coverage
+test
+# source
+lib
+index.ts
+package-lock.json
+.eslintrc.js
+.gitignore
+docker-compose
+tsconfig.json
+tsconfig.build.json
+.prettierrc
+.commitlintrc.json
+*.log
